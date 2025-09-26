@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\YourTable;
+use App\Models\Item;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
@@ -13,5 +13,3 @@ class ItemController extends Controller
         return response()->json($data);
     }
 }
-
-Route::get('/item-data', [ItemController::class, 'index']);
